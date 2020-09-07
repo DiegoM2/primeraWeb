@@ -8,13 +8,13 @@ body{
 
 #logo{
     margin: 10px; 
-    max-width: 25%; 
+    max-width: 20%; 
 }
 
 #buscarLibro {
     float: right; 
-    margin-top: 40px; 
-    margin-right: 20px; 
+    margin-top: 1%;
+    margin-right: 1%; 
 }
 
 nav{
@@ -23,51 +23,27 @@ nav{
     padding: 2px; 
 }
 
-
-#nav_squares li {
-    font: normal bold 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: inline-block; 
-}
-
-#nav_squares li a{
-    border:1px black solid;
-    padding: 10px 15px;
-    background-color:#2B7A78;
-    text-decoration: none;
-    color: white;
-    line-height: 55px;
-}
-
-#nav_squares li a:hover {
-    background-color:#21343b;
-    color:gray
-}
-
-#nav_squares li a:active {
-    background-color:#162227;
-}
-
 #novedades{
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 300px;
     text-align-last: center;
     border: 2px solid black;
     background-color: rgb(58, 58, 58);
 }
 
-#img_nov {
+#novedades img {
     margin-top:8px;
-    max-height: 95%;
-    max-width: 100%;
+    max-width: 60%;
 }
 
 #box_libro {
     background-color: #17252A;
     width: 200px;
-    height: 400px;
-    margin-left: 50px;
-    margin-right: 50px;
+
+    height: 380px;
+
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
     border: 2px solid black;
@@ -133,8 +109,6 @@ footer a{
     margin-left: 30px;
 }
 
-
-
 #btn_menu{
     display: none;
 }
@@ -163,7 +137,7 @@ header label:hover{
     flex-direction: row;
 }
 
-.menu li:hover{
+.menu li a:hover{
     background-color:#21343b;
     color:gray
 
@@ -173,13 +147,14 @@ header label:hover{
     border-right: lpx solid #fff;
 }
 
-.menu li:active{
+.menu li a:active{
     background-color:#162227;
 }
 .menu li a{
-
+    font: normal bold 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border:1px black solid;
-    padding: 10px 30px;
+    margin: 3px 1px;
+    padding: 10px 14px;
     background-color:#2B7A78;
     text-decoration: none;
     color: white;
@@ -187,14 +162,14 @@ header label:hover{
 
 }
 
-@media (max-width:883px){
+@media (max-width:900px){
     header label {
         display: block;
     }
 
     .menu{
         position: absolute;
-        background:#2B7A78;
+        background: #17252A;
         width: 70%;
         margin-left: -100%;
         transition: all 0.5s;
@@ -203,10 +178,6 @@ header label:hover{
 
     .menu ul{
         flex-direction: column;
-    }
-
-    .menu li{
-        border-top: lpx solid #fff;
     }
 
     #btn_menu:checked ~ .menu{
