@@ -80,11 +80,13 @@ nav{
     margin-left: 38px; 
     border: 2.5px solid black;
     height: 170px;
+    margin: auto;
 }
 
 #detalles_libro{
     text-align-last: center;
     line-height: 11px;
+    justify-content: center;
 }
 
 #lib_autor, #valor_internet_1{
@@ -101,8 +103,15 @@ nav{
     padding: 6px;
     background-color: #DEF2F1;
     margin-left: 55px;
+    display: flex;
 
 }
+
+#valor_internet_2{
+    display: flex;
+    justify-content: center;
+}
+
 
 footer{
     margin-top: 30px;
@@ -121,4 +130,85 @@ footer a{
 #menuFooter{
     margin-top: 15px;
     margin-left: 30px;
+}
+
+
+
+#btn_menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height:30px;
+    padding: 10px;
+    border-right: lpx solid #fff;
+}
+
+header label:hover{
+
+    cursor: pointer;
+    background-color: rgb(76, 85, 104);
+}
+
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menu li:hover{
+    background-color:#21343b;
+    color:gray
+
+}
+
+.menu li{
+    border-right: lpx solid #fff;
+}
+
+.menu li:active{
+    background-color:#162227;
+}
+.menu li a{
+
+    border:1px black solid;
+    padding: 10px 30px;
+    background-color:#2B7A78;
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+@media (max-width:883px){
+    header label {
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background:#2B7A78;
+        width: 70%;
+        margin-left: -100%;
+        transition: all 0.5s;
+
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: lpx solid #fff;
+    }
+
+    #btn_menu:checked ~ .menu{
+        margin-left: 0%;
+    }
 }

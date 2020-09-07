@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Libreria Lorem Ipsum</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
     <link rel="icon" href="img/Icono.png">
   </head>
 
@@ -21,38 +22,51 @@
             <button type="submit"> Buscar </button>
         </div>
 
-        <nav>
-          <ul>
-            <li id="nav_square">
-              <a id="nav_opciones" href="https://www.google.com" target="blank">Inicio</a>
-            </li>
-            <li id="nav_square">
-              <a id="nav_opciones" href="https://www.google.com" target="blank">Los más vendidos</a>
-            </li>
-            <li id="nav_square">
-              <a id="nav_opciones" href="https://www.google.com" target="blank">Ofertas</a>
-            </li>
-            <li id="nav_square">
-              <a id="nav_opciones" href="https://www.google.com" target="blank">Géneros</a>
-            </li>
-            <li id="nav_square">
-              <a id="nav_opciones" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8e4cuIdWHDSgg6m3Yk5E2gsespf57soUZeQ&usqp=CAU" target="blank">Quienes somos</a>
-            </li>
-            <li id="nav_square">
-              <a id="nav_opciones" href="https://www.google.com" target="blank">Servicio al Cliente</a>
-            </li>
-          </ul>
-        </nav>
+
+        <!-- Menu -->
+          <input type="checkbox" id="btn_menu">
+          <label for="btn_menu"><img src="img/icono_menu.png" alt="" height="25px" width="25px"></label>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a  href="https://www.google.com" target="blank">Inicio</a>
+              </li>
+              <li>
+                <a href="https://www.google.com" target="blank">Los más vendidos</a>
+              </li>
+              <li>
+                <a  href="https://www.google.com" target="blank">Ofertas</a>
+              </li>
+              <li>
+                <a  href="https://www.google.com" target="blank">Géneros</a>
+              </li>
+              <li>
+                <a  href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8e4cuIdWHDSgg6m3Yk5E2gsespf57soUZeQ&usqp=CAU" target="blank">Quienes somos</a>
+              </li>
+              <li>
+                <a  href="https://www.google.com" target="blank">Servicio al Cliente</a>
+              </li>
+            </ul>
+            
+          </nav>
+
+
+
+
+
+
+
+
     </header>
 
     <section id="novedades">
       <img id="img_nov" src="img/reading.jpg">
     </section>
 
-    <section id="display_libros" style="border:3px solid black">
+    <section class="center-xs" id="display_libros" style="border:3px solid black">
 
       <div id="box_libro">
-        <img id="foto_libro" src="img/libro1.jpg">
+          <img id="foto_libro" src="img/libro1.jpg">
         <div id="detalles_libro">
           <p id="lib_titulo">El Código Da Vinci</p> 
           <p id="lib_autor">Dan Brown</p>
@@ -63,7 +77,7 @@
       </div>
 
       <div id="box_libro">
-        <img id="foto_libro" src="img/libro2.jpg">
+        <img  id="foto_libro" src="img/libro2.jpg">
         <div id="detalles_libro">
           <p id="lib_titulo">El Principito</p> 
           <p id="lib_autor">Antoine de Saint-Exupéry</p>
@@ -87,8 +101,7 @@
       <div id="box_libro">
         <img id="foto_libro" src="img/libro4.jpg">
         <div id="detalles_libro">
-          <p id="lib_titulo"> Harry Potter y la Orden de Fenix
-          </p> 
+          <p id="lib_titulo"> H. P. y la Orden de Fenix
           <p id="lib_autor">J. K. Rowling</p>
           <p id="valor_internet_1">Precio Internet</p>
           <p id="valor_internet_2">$19.990</p>
