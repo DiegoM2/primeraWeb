@@ -6,15 +6,9 @@ body{
     border: 2px solid black; 
 }
 
-nav{
-    text-align: center; 
-    background-color: #17252A; 
-    padding:2px; 
-}
-
 #logo{
     margin: 10px; 
-    width: 20%; 
+    max-width: 25%; 
 }
 
 #buscarLibro {
@@ -23,26 +17,33 @@ nav{
     margin-right: 20px; 
 }
 
-#nav_square {
-    font: normal bold 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: inline-block; 
-    margin-right: 10px;
+nav{
+    text-align: center; 
+    background-color: #17252A; 
+    padding: 2px; 
 }
 
-#nav_opciones{
+
+#nav_squares li {
+    font: normal bold 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block; 
+}
+
+#nav_squares li a{
     border:1px black solid;
-    padding: 10px 30px;
+    padding: 10px 15px;
     background-color:#2B7A78;
     text-decoration: none;
     color: white;
+    line-height: 55px;
 }
 
-#nav_opciones:hover {
+#nav_squares li a:hover {
     background-color:#21343b;
     color:gray
 }
 
-#nav_opciones:active {
+#nav_squares li a:active {
     background-color:#162227;
 }
 
