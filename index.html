@@ -12,109 +12,216 @@
   </head>
 
   <body>
-    
-    <header id="banner"> <!-- Barra de arriba-->
 
-        <img id="logo" src="img/logo2.png">
-
-        <div id="buscarLibro">
-            <input placeholder="Busqueda de libros...">
-            <button type="submit"> Buscar </button>
+    <!-- Logo, sección nav superior, y barra de busqueda-->
+    <header id="banner"> 
+      <div class="row middle-xs">
+        <div class="col-xs-6">
+          <a href="index.html">
+            <img id="logo" src="img/logo2.png">
+          </a>
         </div>
 
-        <!-- Menu -->
-          <input type="checkbox" id="btn_menu">
-          <label for="btn_menu"><img src="img/icono_menu.png" alt="" height="30px" width="30px"></label>
-          <nav class="menu">
-            <ul>
-              <li>
-                <a  href="https://www.google.com" target="blank">Inicio</a>
-              </li>
-              <li>
-                <a href="https://www.google.com" target="blank">Los más vendidos</a>
-              </li>
-              <li>
-                <a  href="https://www.google.com" target="blank">Ofertas</a>
-              </li>
-              <li>
-                <a  href="https://www.google.com" target="blank">Géneros</a>
-              </li>
-              <li>
-                <a  href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8e4cuIdWHDSgg6m3Yk5E2gsespf57soUZeQ&usqp=CAU" target="blank">Quienes somos</a>
-              </li>
-              <li>
-                <a  href="https://www.google.com" target="blank">Servicio al Cliente</a>
-              </li>
-            </ul>
-            
-          </nav>
+        <div class="col-xs-6">
+          <div id="buscarLibro">
+              <input type="text" placeholder="Busqueda de libros...">
+              <button type="submit"> Buscar </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu de Navegación -->
+        <input type="checkbox" id="btn_menu">
+        <label for="btn_menu"><img src="img/icono_menu.png" height="30px" width="30px"></label>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a  href="https://www.google.com" target="blank">Inicio</a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="blank">Los más vendidos</a>
+            </li>
+            <li>
+              <a  href="https://www.google.com" target="blank">Ofertas</a>
+            </li>
+            <li>
+              <a  href="https://www.google.com" target="blank">Géneros</a>
+            </li>
+            <li>
+              <a  href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8e4cuIdWHDSgg6m3Yk5E2gsespf57soUZeQ&usqp=CAU" target="blank">Quienes somos</a>
+            </li>
+            <li>
+              <a  href="https://www.google.com" target="blank">Servicio al Cliente</a>
+            </li>
+          </ul>
+          
+        </nav>
 
     </header>
 
-    <div class="row center-md center-xs">
-      <section class="col-lg-6 col-md-6 col-sm-6 col-xs-9" id="novedades">
+    <!-- Este div contiene la imagen de debajo del Header. -->
+    <div class="row center-xs"> 
+      <section class="col-sm-6 col-xs-11" alt="Imagen Novedades 1" id="novedades">
         <img src="img/reading.jpg">
       </section>
     </div>
-    
 
-    <section class="center-xs" id="display_libros" style="border:3px solid black">
+    <!-- Esta sección contiene todos los libros-->
+    <section  id="display_libros">
+      
+      <div class="row center-xs"> 
 
-      <div id="box_libro">
-          <img id="foto_libro" src="img/libro1.jpg">
-        <div id="detalles_libro">
-          <p id="lib_titulo">El Código Da Vinci</p> 
-          <p id="lib_autor">Dan Brown</p>
-          <p id="valor_internet_1">Precio Internet</p>
-          <p id="valor_internet_2">$18.990</p>
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+            <img id="foto_libro" src="img/libro1.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">El Código Da Vinci</p> 
+            <p id="lib_autor">Dan Brown</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$18.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
         </div>
-        <button id="boton_detalles" type="submit" >Ver Detalles</button>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img  id="foto_libro" src="img/libro2.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">El Principito</p> 
+            <p id="lib_autor">Antoine de Saint-Exupéry</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$12.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img id="foto_libro" src="img/libro3.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">Cien años de Soledad</p> 
+            <p id="lib_autor">Gabriel García Márquez</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$19.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img id="foto_libro" src="img/libro4.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo"> H. P. y la Orden de Fenix
+            <p id="lib_autor">J. K. Rowling</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$19.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
       </div>
 
-      <div id="box_libro">
-        <img  id="foto_libro" src="img/libro2.jpg">
-        <div id="detalles_libro">
-          <p id="lib_titulo">El Principito</p> 
-          <p id="lib_autor">Antoine de Saint-Exupéry</p>
-          <p id="valor_internet_1">Precio Internet</p>
-          <p id="valor_internet_2">$12.990</p>
+      <div class="row center-xs"> 
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+            <img id="foto_libro" src="img/libro1.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">El Código Da Vinci</p> 
+            <p id="lib_autor">Dan Brown</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$18.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
         </div>
-        <button id="boton_detalles" type="submit" >Ver Detalles</button>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img  id="foto_libro" src="img/libro2.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">El Principito</p> 
+            <p id="lib_autor">Antoine de Saint-Exupéry</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$12.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img id="foto_libro" src="img/libro3.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">Cien años de Soledad</p> 
+            <p id="lib_autor">Gabriel García Márquez</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$19.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img id="foto_libro" src="img/libro4.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo"> H. P. y la Orden de Fenix
+            <p id="lib_autor">J. K. Rowling</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$19.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
       </div>
 
-      <div id="box_libro">
-        <img id="foto_libro" src="img/libro3.jpg">
-        <div id="detalles_libro">
-          <p id="lib_titulo">Cien años de Soledad</p> 
-          <p id="lib_autor">Gabriel García Márquez</p>
-          <p id="valor_internet_1">Precio Internet</p>
-          <p id="valor_internet_2">$19.990</p>
-        </div>
-        <button id="boton_detalles" type="submit" >Ver Detalles</button>
-      </div>
+      <div class="row center-xs"> 
 
-      <div id="box_libro">
-        <img id="foto_libro" src="img/libro4.jpg">
-        <div id="detalles_libro">
-          <p id="lib_titulo"> H. P. y la Orden de Fenix
-          <p id="lib_autor">J. K. Rowling</p>
-          <p id="valor_internet_1">Precio Internet</p>
-          <p id="valor_internet_2">$19.990</p>
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+            <img id="foto_libro" src="img/libro1.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">El Código Da Vinci</p> 
+            <p id="lib_autor">Dan Brown</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$18.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
         </div>
-        <button id="boton_detalles" type="submit" >Ver Detalles</button>
-      </div>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img  id="foto_libro" src="img/libro2.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">El Principito</p> 
+            <p id="lib_autor">Antoine de Saint-Exupéry</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$12.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img id="foto_libro" src="img/libro3.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo">Cien años de Soledad</p> 
+            <p id="lib_autor">Gabriel García Márquez</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$19.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div>
+
+        <div class="col-xs-5 col-sm-2" id="box_libro">
+          <img id="foto_libro" src="img/libro4.jpg">
+          <div id="detalles_libro">
+            <p id="lib_titulo"> H. P. y la Orden de Fenix
+            <p id="lib_autor">J. K. Rowling</p>
+            <p id="valor_internet_1">Precio Internet</p>
+            <p id="valor_internet_2">$19.990</p>
+          </div>
+          <button id="boton_detalles" type="submit" >Ver Detalles</button>
+        </div> 
 
     </section>
 
       <footer>
-        <div >
-          <p id="menuFooter">Menú principal</p>
-          <a href="https://www.google.com">Inicio</a> <br>
-          <a href="https://www.google.com">Los más vendidos</a> <br>
-          <a href="https://www.google.com">Ofertas</a> <br>
-          <a href="https://www.google.com">Generos</a> <br>
-          <a href="https://www.google.com">Quienes somos</a> <br>
-          <a href="https://www.google.com">Servicio al cliente</a> 
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <p>Menú principal</p>
+            <a href="https://www.google.com">Inicio</a> <br>
+            <a href="https://www.google.com">Los más vendidos</a> <br>
+            <a href="https://www.google.com">Ofertas</a> <br>
+            <a href="https://www.google.com">Generos</a> <br>
+            <a href="https://www.google.com">Quienes somos</a> <br>
+            <a href="https://www.google.com">Servicio al cliente</a> 
+          </div>
         </div>
       </footer>
   </body>
