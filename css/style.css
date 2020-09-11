@@ -31,7 +31,7 @@ nav{
 }
 
 #novedades img {
-    margin-top:8px;
+    margin-top:1vh;
     max-width: 70%;
 }
 
@@ -41,21 +41,23 @@ nav{
 }
 
 #box_libro {
+    max-width: 20vw;
     padding-bottom: 1%;
     background-color: #17252A;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 2vw;
+    margin-left: 2vw;
     margin-top: 1rem;
     border: 2px solid black;
     color: wheat;
     font-family: sans-serif;
-    /*display: inline-block;*/
 }
 
 #foto_libro{
+    border-radius: 5px;
     margin-top: 15px;
     border: 2.5px solid black;
-    height: 10rem;
+    width: 7vw;
+    object-fit: scale-down;
 }
 
 #detalles_libro{
@@ -63,26 +65,26 @@ nav{
 }
 
 #lib_autor, #valor_internet_1{
-    font-size: 16px;
+    font-size: 1.1vw;
     color: white;
-}
+} 
 
-#boton_detalles{
-    border:none;
-    padding: 6px;
-    background-color: #DEF2F1;
-    
-
-}
-
-#valor_internet_2{
+#valor_internet_2, #lib_titulo{
+    font-size: 1.3vw;
     display: flex;
     justify-content: center;
 }
 
+#boton_detalles{
+    border:none;
+    padding: 0.5vw;
+    font-size: 0.9vw;
+    background-color: #DEF2F1;
+}
+
 
 footer{
-    font-size: 1.2rem;
+    font-size: 1.3vw;
     line-height: 150%;
     margin-top: 30px;
     padding-bottom: 2%;
@@ -102,12 +104,10 @@ header label{
     display: none;
     width: 30px;
     height:30px;
-    padding: 10px;
-    border-right: lpx solid #fff;
+    margin: 10px;
 }
 
 header label:hover{
-
     cursor: pointer;
     background-color: rgb(76, 85, 104);
 }
@@ -128,18 +128,14 @@ header label:hover{
 
 }
 
-.menu li{
-    border-right: lpx solid #fff;
-}
-
 .menu li a:active{
     background-color:#162227;
 }
 .menu li a{
-    font: normal bold 20px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: normal bold 1.25vw Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0.4vh 0.1vw;
+    padding: 1.1vh 1vw;
     border:1px black solid;
-    margin: 3px 1px;
-    padding: 10px 14px;
     background-color:#2B7A78;
     text-decoration: none;
     color: white;
@@ -147,7 +143,7 @@ header label:hover{
 
 }
 
-@media (max-width:900px){
+@media (max-width:650px){
     header label {
         display: block;
     }
@@ -155,7 +151,6 @@ header label:hover{
     .menu{
         position: absolute;
         background: #17252A;
-        width: 70%;
         margin-left: -100%;
         transition: all 0.5s;
     }
@@ -173,7 +168,43 @@ header label:hover{
     }
 
     #box_libro {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
+        min-width: 40vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    #foto_libro{
+        width: 25vw;
+    }
+
+    .menu li a {
+        width: 60vw;
+        font-size: 5vw;
+    }
+
+    #lib_autor, #valor_internet_1{
+        font-size: 4vw;
+        color: white;
+    } 
+    
+    #valor_internet_2, #lib_titulo{
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #boton_detalles{
+        border:none;
+        padding: 0.5vw;
+        font-size: 4vw;
+        background-color: #DEF2F1;
+    }
+
+    footer{
+        font-size: 5vw;
+        line-height: 150%;
+        margin-top: 7vw;
+        padding-bottom: 7vw;
+        background-color: rgb(76, 85, 104); 
     }
 }
