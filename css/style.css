@@ -75,7 +75,7 @@ nav{
     justify-content: center;
 }
 
-#boton_detalles{
+.boton_detalles{
     border:none;
     padding: 0.5vw;
     font-size: 0.9vw;
@@ -193,11 +193,8 @@ header label:hover{
         justify-content: center;
     }
 
-    #boton_detalles{
-        border:none;
-        padding: 0.5vw;
+    .boton_detalles{
         font-size: 4vw;
-        background-color: #DEF2F1;
     }
 
     footer{
