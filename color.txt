@@ -1,7 +1,8 @@
 
 El menú principal debiese mostrar libros como bloques, con imagen, titulo, autor, genero, y editorial. 
 
-La pagina idealmente debiese tener carrito de compras. Para eso, arriba a la derecha Debe decir "Iniciar Sesión", lo que abrirá un panel para ingresar correo y contraseña, junto con un botón de ingresar, otro botón de crear cuenta y un texto clicable que diga "olvidé mi contraseña" 
+La pagina idealmente debiese tener carrito de compras. Para eso, arriba a la derecha Debe decir "Iniciar Sesión", 
+lo que abrirá un panel para ingresar correo y contraseña, junto con un botón de ingresar, otro botón de crear cuenta y un texto clicable que diga "olvidé mi contraseña" 
 
 
 #17252A (darkest green)
