@@ -31,18 +31,20 @@
         
         <div class="col-xs-5"> <!--Barra de busqueda-->
           <div id="buscarLibro">
-              <input type="text" placeholder="Busqueda de libros...">
-              <button type="submit"> Buscar </button>
+              <input type="text" id="txt_busqueda" placeholder="Busqueda de libros...">
+              <button type="submit" onclick="buscar()"> Buscar </button>
           </div>
         </div>
 
-        <div class="col-xs-2">
-          <img src="img/icono_menu.png" height="30px" width="30px">
+        <div class="col-xs-4" id="usuario_carrito">
+          <img id="usuario" src="img/Usuario.png" onclick="miUsuario()">
+          <img id="carro_compra" src="img/shopping-cart.png"> 
         </div>
+      </div>
 
-        <div class="col-xs-2">
-          <img src="img/icono_menu.png" height="30px" width="30px"> 
-        </div>
+      <div id="modal_usuario" class="modal">
+        <span class="cerrar">&times;</span>
+        <p>AAAAAAAAAAAAAAAAAAA</p>
         
       </div>
 
@@ -52,7 +54,7 @@
         <nav class="menu">
           <ul>
             <li>
-              <a  href="https://www.google.com" target="blank">Inicio</a>
+              <a  href="index.html">Inicio</a>
             </li>
             <li>
               <a href="https://www.google.com" target="blank">Los más vendidos</a>
@@ -82,7 +84,7 @@
             <div class="col-xs-12">
 
                 <!-- Slideshow container -->
-                <div class="slideshow-container">
+                <div class="slideshow-container" >
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">

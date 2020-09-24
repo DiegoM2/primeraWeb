@@ -15,6 +15,15 @@ body{
     margin-left:10vw;
     text-align: center;
 }
+
+#buscarLibro input{
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+
+#buscarLibro button{
+    font-size: 1.3vw;
+}
  
 nav{
     text-align: center; 
@@ -158,11 +167,51 @@ header label:hover{
     margin-top: 2vh;
 }
 
+#usuario_carrito{
+    text-align: right;
+}
 
+#usuario_carrito img{
+    width: 3.1vw;
+    height: 3.5vw;
+    margin-right: 2vw;
+}
 
+#usuario:hover, #carro_compra:hover{
+    cursor: pointer;
+}
 
+.modal{
+    display: none;
+    position:fixed;
+    z-index:1;
+    right:0;
+    width: 20vw;
+    height: 10vw;
+    overflow: hidden;
+    background-color: #e0a750;
+}
 
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding:20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 
+.cerrar{
+    color:#aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover, .cerrar:focus{
+    color:black;
+    text-decoration: none;
+    cursor:pointer;
+}
 
 
 
@@ -280,7 +329,6 @@ header label:hover{
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
