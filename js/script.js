@@ -2,6 +2,13 @@ $(document).ready(function() {
     $(".boton_detalles").click(function() {
         alert("Sitio web en construcción, por favor intente más tarde.");
     });
+
+    $("#usuario").click(function(){
+      
+      var modal = document.getElementById("modal_usuario");
+      modal.style.display = block;
+    });
+
 });
 
 var slideIndex = 0;
@@ -23,9 +30,9 @@ function buscar(){
   /*Esto debiese tomar las palabras y buscarlas en alguna base de datos, pero aún no hay base de datos. */
 }
 
-/* Se supone que esto debiese abrir lo que será la ventana para iniciar sesión. */
+/* Se supone que esto debiese abrir lo que será la ventana para iniciar sesión. 
 var modal = document.getElementById('modal_usuario');
 function miUsuario(){
   modal.style.display= block;
-}
+}*/
 
