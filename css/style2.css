@@ -1,0 +1,249 @@
+body{
+    background-color: #2B7A78; 
+}
+
+#banner {
+    border: 2px solid black; 
+}
+
+#logo{
+    margin: 10px; 
+    width: 70%; 
+}
+
+#buscarLibro {
+    float: right; 
+    margin-right: 1%; 
+}
+ 
+nav{
+    text-align: center; 
+    background-color: #17252A; 
+    padding: 2px; 
+}
+
+#novedades{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align-last: center;
+    border: 2px solid black;
+    background-color: rgb(58, 58, 58);
+}
+
+#novedades img {
+    margin-top:1vh;
+    max-width: 70%;
+}
+
+#display_libros{
+    border:3px solid black;
+    padding-bottom:1%
+}
+
+#contactenos a{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+#asunto
+{
+    background-color: #2B7A78;
+    border:2px solid black;
+    color: #DEF2F1;
+}
+
+
+
+#box_libro {
+    max-width: 20vw;
+    padding-bottom: 1%;
+    background-color: #17252A;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 1rem;
+    border: 2px solid black;
+    color: wheat;
+    font-family: sans-serif;
+}
+
+#foto_libro{
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 2.5px solid black;
+    width: 7vw;
+    object-fit: scale-down;
+}
+
+#detalles_libro{
+    text-align-last: center;
+}
+
+#lib_autor, #valor_internet_1{
+    font-size: 1.1vw;
+    color: white;
+} 
+
+#valor_internet_2, #lib_titulo{
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.boton_detalles{
+    border:none;
+    padding: 0.5vw;
+    font-size: 0.9vw;
+    background-color: #DEF2F1;
+}
+
+
+footer{
+    font-size: 1.3vw;
+    line-height: 150%;
+    margin-top: 30px;
+    padding-bottom: 2%;
+    background-color: rgb(76, 85, 104); 
+}
+
+footer a{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+#btn_menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height:30px;
+    margin: 10px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color: rgb(76, 85, 104);
+}
+
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menu li a:hover{
+    background-color:#21343b;
+    color:gray
+
+}
+
+.menu li a:active{
+    background-color:#162227;
+}
+.menu li a{
+    font: normal bold 1.25vw Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0.4vh 0.1vw;
+    padding: 1.1vh 1vw;
+    border:1px black solid;
+    background-color:#2B7A78;
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+.label_contacto{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-weight: bold;
+    size: auto;
+
+}
+
+
+#contacto_section{
+    padding: 3%;
+    padding-left: 7%;
+}
+input.label_contacto{
+    height: 14px;
+    width: 32;
+}
+
+
+#btn_enviar{
+    display: none;
+    padding-right: 50%;
+}
+@media (max-width:650px){
+    header label {
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #17252A;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    #btn_menu:checked ~ .menu{
+        margin-left: 0%;
+    }
+
+    #logo{
+        width: 110%;
+    }
+
+    #box_libro {
+        min-width: 40vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    #foto_libro{
+        width: 25vw;
+    }
+
+    .menu li a {
+        width: 60vw;
+        font-size: 5vw;
+    }
+
+    #lib_autor, #valor_internet_1{
+        font-size: 4vw;
+        color: white;
+    } 
+    
+    #valor_internet_2, #lib_titulo{
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton_detalles{
+        font-size: 4vw;
+    }
+
+    footer{
+        font-size: 5vw;
+        line-height: 150%;
+        margin-top: 7vw;
+        padding-bottom: 7vw;
+        background-color: rgb(76, 85, 104); 
+    }
+
+
+
+}
