@@ -26,9 +26,38 @@ body{
 }
  
 nav{
+    z-index: 99;
     text-align: center; 
     background-color: #34318a; 
     padding: 2px; 
+}
+
+nav ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav li a:hover{
+    background-color:#ee7522;
+
+}
+
+nav li a:active{
+    background-color:#162227;
+}
+nav li a{
+    font: normal bold 1.25vw sans-serif;
+    margin: 0.4vh 0.1vw;
+    padding: 1.1vh 1vw;
+    border:1px black solid;
+    background-color:#3a5990;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
 #novedades{
@@ -121,35 +150,6 @@ header label:hover{
     background-color: rgb(76, 85, 104);
 }
 
-
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.menu li a:hover{
-    background-color:#ee7522;
-
-}
-
-.menu li a:active{
-    background-color:#162227;
-}
-.menu li a{
-    font: normal bold 1.25vw sans-serif;
-    margin: 0.4vh 0.1vw;
-    padding: 1.1vh 1vw;
-    border:1px black solid;
-    background-color:#3a5990;
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
 #bestSeller{ 
     text-align: right;
     color:white;
@@ -181,29 +181,29 @@ header label:hover{
     cursor: pointer;
 }
 
-.modal{
+#modal_usuario{
+    border-radius: 10px;
     display: none;
-    position:fixed;
+    position: absolute;;
     z-index:1;
-    right:0;
-    width: 20vw;
-    height: 10vw;
+    right:1vw;
+    width: 15vw;
+    height: 11vw;
+    padding: 0.8vw;
     overflow: hidden;
-    background-color: #e0a750;
+    background-color: #f38642;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding:20px;
-    border: 1px solid #888;
-    width: 80%;
+#modal_usuario a{
+    line-height: 1.5vw;
+    color: black;
+    font-family: sans-serif;
 }
 
 .cerrar{
-    color:#aaa;
+    color:black;
     float: right;
-    font-size: 28px;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -213,6 +213,9 @@ header label:hover{
     cursor:pointer;
 }
 
+#botones_carrusel{
+    transform: translateY(-15vh);
+}
 
 
 
@@ -220,28 +223,44 @@ header label:hover{
 
 
 
-@media (max-width:650px){
+
+@media (max-width:800px){
     header label {
         display: block;
     }
 
-    .menu{
+    nav{
         position: absolute;
         background: #17252A;
         margin-left: -100%;
         transition: all 0.5s;
     }
 
-    .menu ul{
+    nav ul{
         flex-direction: column;
     }
 
-    #btn_menu:checked ~ .menu{
+    #btn_menu:checked ~ nav{
         margin-left: 0%;
     }
 
+    nav li a {
+        width: 60vw;
+        font-size: 5vw;
+    }
+
     #logo{
-        width: 110%;
+        width: 35vw;
+    }
+
+    #usuario_carrito img{
+        width: 7vw;
+        height: 8vw;
+        margin-right: 2vw;
+    }
+
+    #carrusel, #carrusel img{
+        height: 50vw;
     }
 
     #bestSeller{ 
@@ -263,11 +282,6 @@ header label:hover{
 
     #foto_libro{
         width: 25vw;
-    }
-
-    .menu li a {
-        width: 60vw;
-        font-size: 5vw;
     }
 
     #lib_autor, #valor_internet_1{
@@ -292,6 +306,7 @@ header label:hover{
         padding-bottom: 7vw;
         background-color: #06070a; 
     }
+
 }
 
 
@@ -316,7 +331,6 @@ header label:hover{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 30%;
   position: relative;
   margin: auto;
 }
@@ -333,7 +347,7 @@ header label:hover{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: goldenrod;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;

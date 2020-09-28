@@ -1,44 +1,74 @@
 body{
-    background-color: #2B7A78; 
+    background-color: #9acedb; 
 }
 
 #banner {
-    border: 2px solid black; 
+    background-color: #3a5992; 
 }
 
 #logo{
     margin: 10px; 
-    width: 70%; 
+    width: 60%; 
 }
 
 #buscarLibro {
-    float: right; 
-    margin-right: 1%; 
+    margin-left:10vw;
+    text-align: center;
+}
+
+#buscarLibro input{
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+
+#buscarLibro button{
+    font-size: 1.3vw;
+}
+
+#usuario_carrito{
+    text-align: right;
+}
+
+#usuario_carrito img{
+    width: 3.1vw;
+    height: 3.5vw;
+    margin-right: 2vw;
 }
  
 nav{
     text-align: center; 
-    background-color: #17252A; 
+    background-color: #34318a; 
     padding: 2px; 
 }
 
-#novedades{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align-last: center;
-    border: 2px solid black;
-    background-color: rgb(58, 58, 58);
+nav ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-#novedades img {
-    margin-top:1vh;
-    max-width: 70%;
+nav li a:hover{
+    background-color:#ee7522;
+
 }
 
-#display_libros{
-    border:3px solid black;
-    padding-bottom:1%
+nav li a:active{
+    background-color:#162227;
 }
+nav li a{
+    font: normal bold 1.25vw sans-serif;
+    margin: 0.4vh 0.1vw;
+    padding: 1.1vh 1vw;
+    border:1px black solid;
+    background-color:#3a5990;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
 
 #contactenos a{
     color: black;
@@ -52,66 +82,25 @@ nav{
     color: #DEF2F1;
 }
 
-
-
-#box_libro {
-    max-width: 20vw;
-    padding-bottom: 1%;
-    background-color: #17252A;
-    margin-right: 2vw;
-    margin-left: 2vw;
-    margin-top: 1rem;
-    border: 2px solid black;
-    color: wheat;
-    font-family: sans-serif;
-}
-
-#foto_libro{
-    border-radius: 5px;
-    margin-top: 15px;
-    border: 2.5px solid black;
-    width: 7vw;
-    object-fit: scale-down;
-}
-
-#detalles_libro{
-    text-align-last: center;
-}
-
-#lib_autor, #valor_internet_1{
-    font-size: 1.1vw;
-    color: white;
-} 
-
-#valor_internet_2, #lib_titulo{
-    font-size: 1.3vw;
-    display: flex;
-    justify-content: center;
-}
-
-.boton_detalles{
-    border:none;
-    padding: 0.5vw;
-    font-size: 0.9vw;
-    background-color: #DEF2F1;
-}
-
-
 footer{
     font-size: 1.3vw;
     line-height: 150%;
     margin-top: 30px;
     padding-bottom: 2%;
-    background-color: rgb(76, 85, 104); 
+    background-color: #06070a; 
 }
 
-footer a{
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+footer a, p{
+    color: white;
+    font-family: sans-serif; 
 }
 
 #btn_menu{
     display: none;
+}
+
+label{
+    font-family: sans-serif;
 }
 
 header label{
@@ -124,37 +113,6 @@ header label{
 header label:hover{
     cursor: pointer;
     background-color: rgb(76, 85, 104);
-}
-
-
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.menu li a:hover{
-    background-color:#21343b;
-    color:gray
-
-}
-
-.menu li a:active{
-    background-color:#162227;
-}
-.menu li a{
-    font: normal bold 1.25vw Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0.4vh 0.1vw;
-    padding: 1.1vh 1vw;
-    border:1px black solid;
-    background-color:#2B7A78;
-    text-decoration: none;
-    color: white;
-    display: block;
-
 }
 
 .label_contacto{
@@ -177,33 +135,118 @@ input.label_contacto{
     width: 32;
 }
 
-
 #btn_enviar{
     display: none;
     padding-right: 50%;
 }
-@media (max-width:650px){
+
+#origen{
+    font-family: sans-serif;
+    line-height: 4vh;
+    margin-left: 10vw;
+    margin-top: 3vh;
+    padding-left: 15px; 
+    padding-right: 20px; 
+    padding-top:1px; 
+    padding-bottom:4px;
+    text-align: right;
+    background-color: #3a5992; 
+    border-radius: 15px; 
+}
+
+#peopleRead, #peopleRead_small{
+    align-self:center;
+    text-align: -webkit-center;
+}
+
+#peopleRead img{
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 30vw;
+}
+
+
+
+#origen_small{
+    display: none;
+    font-family: sans-serif;
+    line-height: 4vh;
+    
+    margin-top: 3vh;
+    padding-left: 15px; 
+    padding-right: 20px; 
+    padding-top:1px; 
+    padding-bottom:4px;
+    text-align: center;
+    background-color: #3a5992; 
+    border-radius: 15px; 
+}
+
+#peopleRead_small img{
+    display: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 90vw;
+}
+
+
+
+
+
+
+
+
+@media (max-width:750px){
+    #origen{
+        display: none;
+    }
+    #origen_small{
+        display: block;
+    }
+
+    #peopleRead{
+        display: none;
+    }
+    #peopleRead_small img{
+        display: block;
+    }
+
+
+
+
+
     header label {
         display: block;
     }
 
-    .menu{
+    nav{
+        z-index: 99;
         position: absolute;
         background: #17252A;
         margin-left: -100%;
         transition: all 0.5s;
     }
 
-    .menu ul{
+    nav ul{
         flex-direction: column;
     }
 
-    #btn_menu:checked ~ .menu{
+    #btn_menu:checked ~ nav{
         margin-left: 0%;
     }
 
     #logo{
         width: 110%;
+    }
+
+    #usuario_carrito{
+        text-align: right;
+    }
+    
+    #usuario_carrito img{
+        width: 3.1vw;
+        height: 3.5vw;
+        margin-right: 2vw;
     }
 
     #box_libro {
@@ -216,24 +259,9 @@ input.label_contacto{
         width: 25vw;
     }
 
-    .menu li a {
+    nav li a {
         width: 60vw;
         font-size: 5vw;
-    }
-
-    #lib_autor, #valor_internet_1{
-        font-size: 4vw;
-        color: white;
-    } 
-    
-    #valor_internet_2, #lib_titulo{
-        font-size: 4vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    .boton_detalles{
-        font-size: 4vw;
     }
 
     footer{
@@ -241,7 +269,7 @@ input.label_contacto{
         line-height: 150%;
         margin-top: 7vw;
         padding-bottom: 7vw;
-        background-color: rgb(76, 85, 104); 
+        background-color: #06070a; 
     }
 
 

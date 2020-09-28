@@ -36,37 +36,44 @@
           </div>
         </div>
 
+        <!-- Iconos para acceder al carrito de compras y a iniciar sesión-->
         <div class="col-xs-4" id="usuario_carrito">
-          <img id="usuario" src="img/Usuario.png">
+          <img id="usuario" onclick="miUsuario()" src="img/Usuario.png">
           <img id="carro_compra" src="img/shopping-cart.png"> 
         </div>
       </div>
 
-      <div id="modal_usuario" class="modal">
-        <span class="cerrar">&times;</span>
-        <p>AAAAAAAAAAAAAAAAAAA</p>
+      <div id="modal_usuario">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <p>Nombre de usuario</p>
+        <input id="username" type="text">
+        <p>Contraseña</p>
+        <input id="password" type="password">
+        <button onclick="logIn()">Iniciar Sesión</button>
+        <a href="">Soy un usuario nuevo</a> <br>
+        <a href="">Olvide mi contraseña</a>
         
       </div>
 
       <!-- Menu de Navegación -->
         <input type="checkbox" id="btn_menu">
-        <label for="btn_menu"><img src="img/icono_menu.png" height="30px" width="30px"></label>
-        <nav class="menu">
+        <label for="btn_menu"><img src="img/icono_menu.png" height="35vh" width="35vw"></label>
+        <nav>
           <ul>
             <li>
               <a  href="index.html">Inicio</a>
             </li>
             <li>
-              <a href="https://www.google.com" target="blank">Los más vendidos</a>
+              <a href="">Los más vendidos</a>
             </li>
             <li>
-              <a  href="https://www.google.com" target="blank">Ofertas</a>
+              <a  href="">Ofertas</a>
             </li>
             <li>
-              <a  href="https://www.google.com" target="blank">Géneros</a>
+              <a  href="">Géneros</a>
             </li>
             <li>
-              <a  href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8e4cuIdWHDSgg6m3Yk5E2gsespf57soUZeQ&usqp=CAU" target="blank">Quienes somos</a>
+              <a  href="nosotros.html">Quienes somos</a>
             </li>
             <li>
               <a  href="contacto.html">Contacto</a>
@@ -81,51 +88,41 @@
 
     <!-- Este div contiene la imagen de debajo del Header. -->
     <div class="row center-xs" id="carrusel">
-            <div class="col-xs-12">
+      <div class="col-xs-12">
+        <!-- Slideshow container -->
+        <div class="slideshow-container" >
 
-                <!-- Slideshow container -->
-                <div class="slideshow-container" >
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <div class="bolque1">
-                        <img src="img/libros1.png" style="width:100%;">
-                    </div>
-                    
-                    <div class="text"></div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="img/libros6.jpg" style="width:100%;">
-                        <div class="text"></div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="img/libros3.jpg" style="width:100%;">
-                        <div class="text"></div>
-                    </div>
+          <!-- Imagenes -->
+          <div class="mySlides fade">
+            <img src="img/libros1.png">
+          </div>
+      
+          <div class="mySlides fade">
+            <img src="img/libros6.jpg">
+          </div>
+      
+          <div class="mySlides fade">  
+            <img src="img/libros3.jpg">
+          </div>
 
 
-                    <!-- Next and previous buttons -->
-                    <div>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-                
-                    <!-- The dots/circles -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
+          <!-- Next and previous buttons -->
+          <div id="botones_carrusel">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+      
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
 
-                </div>
+        </div>
 
-            </div>
+      </div>
     </div>
     
 
@@ -283,12 +280,12 @@
         <div class="row center-xs">
           <div class="col-xs-12">
             <p>Menú principal</p>
-            <a href="https://www.google.com">Inicio</a> <br>
+            <a  href="index.html">Inicio</a> <br>
             <a href="https://www.google.com">Los más vendidos</a> <br>
             <a href="https://www.google.com">Ofertas</a> <br>
             <a href="https://www.google.com">Generos</a> <br>
             <a href="https://www.google.com">Quienes somos</a> <br>
-            <a href="https://www.google.com">Contacto</a> 
+            <a  href="contacto.html">Contacto</a> 
           </div>
         </div>
       </footer>
