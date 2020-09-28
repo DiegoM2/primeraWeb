@@ -16,6 +16,15 @@ body{
     text-align: center;
 }
 
+#buscarLibro input{
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+
+#buscarLibro button{
+    font-size: 1.3vw;
+}
+
 #usuario_carrito{
     text-align: right;
 }
@@ -191,12 +200,54 @@ input.label_contacto{
 }
 
 .form_contacto .btn_enviar {
+    margin-left: 50%;
+}
 
-margin-left: 50%;
+#usuario:hover, #carro_compra:hover{
+    cursor: pointer;
+}
+
+#modal_usuario{
+    border-radius: 10px;
+    display: none;
+    position: absolute;;
+    z-index:1;
+    right:1vw;
+    width: 15vw;
+    height: 11vw;
+    padding: 0.8vw;
+    overflow: hidden;
+    background-color: #f38642;
+}
+
+#modal_usuario a{
+    line-height: 1.5vw;
+    color: black;
+    font-family: sans-serif;
+}
+
+.cerrar{
+    color:black;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.cerrar:hover, .cerrar:focus{
+    color:black;
+    text-decoration: none;
+    cursor:pointer;
 }
 
 
 @media (max-width:750px){
+
+    #usuario_carrito img{
+        width: 7vw;
+        height: 8vw;
+        margin-right: 2vw;
+    }
+
     #origen{
         display: none;
     }
@@ -232,17 +283,7 @@ margin-left: 50%;
     }
 
     #logo{
-        width: 110%;
-    }
-
-    #usuario_carrito{
-        text-align: right;
-    }
-    
-    #usuario_carrito img{
-        width: 3.1vw;
-        height: 3.5vw;
-        margin-right: 2vw;
+        width: 35vw;
     }
 
     #box_libro {

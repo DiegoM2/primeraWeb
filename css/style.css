@@ -225,6 +225,15 @@ header label:hover{
 
 
 @media (max-width:800px){
+    #buscarLibro input{
+        border-radius: 5px;
+        font-size: 2.3vw;
+    }
+    
+    #buscarLibro button{
+        font-size: 2.3vw;
+    }
+
     header label {
         display: block;
     }
