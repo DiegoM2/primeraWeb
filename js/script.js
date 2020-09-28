@@ -72,3 +72,28 @@ function logIn(){
   alert("Las credenciales de usuario no son válidas. Intente de nuevo.")
   encontrado = false;
 }
+
+
+function enviarCorreo(){
+  var asunto = document.getElementById("asunto").value;
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var numero = document.getElementById("numero").value;
+  var comentario = document.getElementById("comentario").value;
+  
+  if(nombre.value == ""|| nombre.value == undefined){
+    alert("El nombre del emisor no puede quedar en blanco!");
+  }
+  else if(email.value == ""||email.value == undefined){
+    alert("El campo email no puede quedar en blanco!");
+  }
+  else if(numero.value == ""||numero.value == undefined){
+    alert("El numero de telefono no puede quedar en blanco!");
+  }
+  else if(comentario.value == ""||comentario.value == undefined){
+    alert("Se debe proporcionar un comentario o contenido del mensaje!");
+  }
+  else{
+    alert("Mensaje enviado con exito! (no realmente, pero no han habido inconvenientes)");
+  }
+}
