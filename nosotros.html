@@ -36,11 +36,24 @@
           </div>
         </div>
 
+        <!-- Iconos para acceder al carrito de compras y a iniciar sesión-->
         <div class="col-xs-4" id="usuario_carrito">
-          <img id="usuario" src="img/Usuario.png">
-          <img id="carro_compra" src="img/shopping-cart.png"> 
+            <img id="usuario" onclick="miUsuario()" src="img/Usuario.png">
+            <img id="carro_compra" src="img/shopping-cart.png"> 
+          </div>
         </div>
-      </div>
+  
+        <div id="modal_usuario">
+          <span class="cerrar" onclick="cerrarModal()">&times;</span>
+          <p>Nombre de usuario</p>
+          <input id="username" type="text">
+          <p>Contraseña</p>
+          <input id="password" type="password">
+          <button onclick="logIn()">Iniciar Sesión</button>
+          <a href="">Soy un usuario nuevo</a> <br>
+          <a href="">Olvide mi contraseña</a>
+          
+        </div>
 
       <!-- Menu de Navegación -->
       <input type="checkbox" id="btn_menu">

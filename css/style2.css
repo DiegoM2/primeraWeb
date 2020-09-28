@@ -165,8 +165,6 @@ input.label_contacto{
     width: 30vw;
 }
 
-
-
 #origen_small{
     display: none;
     font-family: sans-serif;
@@ -189,6 +187,41 @@ input.label_contacto{
     width: 90vw;
 }
 
+#usuario:hover, #carro_compra:hover{
+    cursor: pointer;
+}
+
+#modal_usuario{
+    border-radius: 10px;
+    display: none;
+    position: absolute;;
+    z-index:1;
+    right:1vw;
+    width: 15vw;
+    height: 11vw;
+    padding: 0.8vw;
+    overflow: hidden;
+    background-color: #f38642;
+}
+
+#modal_usuario a{
+    line-height: 1.5vw;
+    color: black;
+    font-family: sans-serif;
+}
+
+.cerrar{
+    color:black;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.cerrar:hover, .cerrar:focus{
+    color:black;
+    text-decoration: none;
+    cursor:pointer;
+}
 
 
 
