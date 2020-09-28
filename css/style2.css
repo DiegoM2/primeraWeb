@@ -16,15 +16,6 @@ body{
     text-align: center;
 }
 
-#buscarLibro input{
-    border-radius: 5px;
-    font-size: 1.2vw;
-}
-
-#buscarLibro button{
-    font-size: 1.3vw;
-}
-
 #usuario_carrito{
     text-align: right;
 }
@@ -127,17 +118,19 @@ header label:hover{
 
 
 #contacto_section{
-    padding: 3%;
-    padding-left: 7%;
+    padding: 0%;
+    padding-left: 0%;
+    margin-left: 0%;
 }
 input.label_contacto{
     height: 14px;
     width: 32;
 }
 
+
 #btn_enviar{
     display: none;
-    padding-right: 50%;
+    margin-left: 50%;
 }
 
 #origen{
@@ -189,11 +182,18 @@ input.label_contacto{
     width: 90vw;
 }
 
+#label_btn{
+    margin-left: 1%;
+}
 
+#label_btn:hover{
+    cursor: pointer;
+}
 
+.form_contacto .btn_enviar {
 
-
-
+margin-left: 50%;
+}
 
 
 @media (max-width:750px){
@@ -210,10 +210,6 @@ input.label_contacto{
     #peopleRead_small img{
         display: block;
     }
-
-
-
-
 
     header label {
         display: block;
@@ -271,6 +267,8 @@ input.label_contacto{
         padding-bottom: 7vw;
         background-color: #06070a; 
     }
+
+
 
 
 
